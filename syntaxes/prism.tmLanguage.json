@@ -1,0 +1,101 @@
+{
+  "scopeName": "source.prism",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#configs"
+    },
+    {
+      "include": "#allowed-configs"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#theme_and_media_names"
+    },
+    {
+      "include": "#theme-variable"
+    },
+    {
+      "include": "#variables-and-operators"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.inline.prism",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.prism",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "configs": {
+      "patterns": [
+        {
+          "name": "constant.language.configs.prism",
+          "match": "(?<=\\bconfig\\s+)([\\w-]+)(?=\\s*=>)"
+        }
+      ]
+    },
+    "allowed-configs": {
+      "patterns": [
+        {
+          "name": "constant.language.allowed-minify.prism",
+          "match": "(?<==>\\s*)(?i)(full|inline|none)"
+        },
+        {
+          "name": "constant.language.allowed-switch.prism",
+          "match": "(?<==>\\s*)(?i)(on|off)"
+        },
+        {
+          "name": "constant.language.allowed-treat.prism",
+          "match": "(?<==>\\s*)(?i)(allow|alert|error)"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.prism",
+          "match": "(?<!@)^\\s*(media|config|theme)\\b"
+        }
+      ]
+    },
+    "theme_and_media_names": {
+      "patterns": [
+        {
+          "name": "string.unquoted.prism",
+          "match": "(?<=^|\\s)(?!config\\b)([\\w-]+)(?=\\s*=>)"
+        }
+      ]
+    },
+    "theme-variable": {
+      "patterns": [
+        {
+          "name": "string.unquoted.prism",
+          "match": "(?<![\\w&-])(--[a-zA-Z0-9_-]+)(?![\\w-])"
+        }
+      ]
+    },
+    "variables-and-operators": {
+      "patterns": [
+        {
+          "name": "variable.other.prism",
+          "match": "\\$[a-zA-Z0-9_-]+"
+        },
+        {
+          "name": "keyword.control.conditional.prism",
+          "match": "=>|&"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "prism-syntax",
+  "displayName": "Envidera Prism Syntax",
+  "description": "Prism syntax highlighting for VSCode.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "publisher": "envidera",
+  "icon": "./img/prism-icon-128x128px.png",
+  "author": {
+    "name": "Andrio Stark",
+    "email": "anstk@envidera.com"
+  },
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "homepage": "https://github.com/envidera/prism-syntax-vscode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/envidera/prism-syntax-vscode.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "envidera",
+    "prism",
+    "syntax"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "prism",
+        "aliases": [
+          "Prism",
+          "prism"
+        ],
+        "extensions": [
+          ".prism"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "prism",
+        "scopeName": "source.prism",
+        "path": "./syntaxes/prism.tmLanguage.json"
+      }
+    ]
+  }
+}

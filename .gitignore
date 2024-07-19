@@ -1,0 +1,5 @@
+/target
+.tmp
+.vscode/tasks.json
+.vscode/settings.json
+*.vsix

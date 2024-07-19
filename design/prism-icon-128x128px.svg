@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="33.866665mm"
+   height="33.866665mm"
+   viewBox="0 0 33.866665 33.866665"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="prism-icon-128x128px.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   inkscape:export-filename="src/icons/prism-icon-128x128px.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.7666667"
+     inkscape:cx="44.277108"
+     inkscape:cy="91.445783"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       xlink:href="#linearGradient135"
+       id="linearGradient151"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.55873587,0,0,0.55873226,-390.40318,62.204894)"
+       x1="711.97803"
+       y1="-77.657509"
+       x2="758.23749"
+       y2="-77.657509" />
+    <linearGradient
+       id="linearGradient135">
+      <stop
+         style="stop-color:#43bb8c;stop-opacity:1;"
+         offset="0"
+         id="stop132" />
+      <stop
+         style="stop-color:#1db0e5;stop-opacity:1;"
+         offset="0.26426682"
+         id="stop133" />
+      <stop
+         style="stop-color:#8168ae;stop-opacity:1;"
+         offset="0.7088213"
+         id="stop134" />
+      <stop
+         style="stop-color:#f16060;stop-opacity:1;"
+         offset="1"
+         id="stop135" />
+    </linearGradient>
+  </defs>
+  <circle
+     style="fill:#ff0000;stroke-width:0.641829;stroke-linecap:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+     id="path1"
+     cx="54.630856"
+     cy="16.933332"
+     r="16.933332" />
+  <g
+     id="layer1"
+     transform="matrix(0.81180986,0,0,0.81180986,0.52070037,1.1496033)">
+    <path
+       id="path148"
+       style="color:#000000;fill:url(#linearGradient151);stroke-width:0.435698;-inkscape-stroke:none;paint-order:stroke fill markers"
+       d="m 20.327742,6.5075448 c -1.896124,0 -3.7921,0.9241354 -4.837608,2.7707664 l -6.7079841,11.8477798 -5.5353642,-0.01415 -0.00881,3.083524 4.08699,0.01054 C 6.5910106,27.57454 9.160845,31.12984 12.859445,31.129836 h 14.937469 c 4.2774,-5.6e-5 7.048068,-4.754888 4.940687,-8.477047 L 29.170405,16.351858 34.611501,10.34956 32.327932,8.2783133 27.570497,13.526471 25.165347,9.2782551 C 24.119785,7.4316241 22.223808,6.5074885 20.327739,6.5074885 Z m 0,2.9830888 c 0.830672,0 1.661033,0.4356766 2.154062,1.3065334 l 2.907322,5.134507 -4.736292,5.22525 -8.332561,-0.02114 5.853409,-10.338613 c 0.493028,-0.8708576 1.32339,-1.3065342 2.15406,-1.3065342 z m 6.661293,9.2664284 3.066784,5.415549 c 1.015277,1.793195 -0.198227,3.872877 -2.258902,3.872906 H 12.859448 c -2.04471,0 -3.2522571,-2.047069 -2.279163,-3.830618 l 11.435468,0.02906 z" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:3.175px;line-height:1.1;font-family:'Fira Sans Condensed';-inkscape-font-specification:'Fira Sans Condensed,  Condensed';text-align:end;text-decoration-color:#000000;letter-spacing:0px;text-anchor:end;white-space:pre;fill:#1a1a1a;stroke-width:0.545354;stroke-linecap:round;-inkscape-stroke:none;paint-order:stroke fill markers"
+     x="30.327074"
+     y="39.98"
+     id="text1"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:'Fira Sans Condensed';-inkscape-font-specification:'Fira Sans Condensed,  Condensed';fill:#1a1a1a;stroke-width:0.545354"
+       x="30.327074"
+       y="39.98">to use, export to </tspan><tspan
+       sodipodi:role="line"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-family:'Fira Sans Condensed';-inkscape-font-specification:'Fira Sans Condensed,  Condensed';fill:#1a1a1a;stroke-width:0.545354"
+       x="30.327072"
+       y="43.4725"
+       id="tspan2">src/icons/prism-icon-128x128px.png</tspan></text>
+</svg>
