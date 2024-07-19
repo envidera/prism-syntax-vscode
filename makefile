@@ -20,13 +20,15 @@ DIST_DIR := $(CURDIR)/dist
 VSIX_FILE := $(shell ls $(DIST_DIR)/*.vsix | sort -V | tail -n 1)
 
 
+# --pre-release
+# https://code.visualstudio.com/api/working-with-extensions/publishing-extension#prerelease-extensions
 
 build:
-	@ vsce package  --baseImagesUrl $(BASE_IMAGE_URL)  --out $(DIST_DIR)
+	@ vsce package --pre-release --baseImagesUrl $(BASE_IMAGE_URL)  --out $(DIST_DIR)
 
 install:
 	@ cd $(DIST_DIR) && code --install-extension $(VSIX_FILE)
 
 # publish to marketplace
 publish:
-	@ vsce publish --baseImagesUrl ${BASE_IMAGE_URL}
+	@ vsce publish --pre-release --baseImagesUrl ${BASE_IMAGE_URL}

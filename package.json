@@ -2,7 +2,7 @@
   "name": "prism-syntax",
   "displayName": "Envidera Prism Syntax",
   "description": "Prism syntax highlighting for VSCode.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "publisher": "envidera",
   "icon": "./img/prism-icon-128x128px.png",
@@ -11,7 +11,7 @@
     "email": "anstk@envidera.com"
   },
   "engines": {
-    "vscode": "^1.50.0"
+    "vscode": "^1.91.0"
   },
   "homepage": "https://github.com/envidera/prism-syntax-vscode",
   "repository": {
