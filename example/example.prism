@@ -1,0 +1,56 @@
+// ----------------------------
+// Prism syntax        
+// ----------------------------
+
+// declare configs
+config set-css-header                   => Envidera UX
+config set-prefix-css-class             => ux-
+config set-prefix-theme-variable        => ux-
+config switch-theme-inherit             => off
+config treat-undeclared-theme-variable  => error
+config treat-usage-id-selector          => alert
+config minify-css                       => full
+config minify-theme                     => none
+config minify-vanilla-css               => none
+
+// declare medias
+media mobile             => @media  max-width: 480px)
+media tablet             => @media (min-width: 481px) and (max-width: 960px)
+media large-white_fridge => @media (min-width: 1901px) and (max-width: 5000px)
+
+// declare themes
+theme default => :root 
+    --bg-color: white 
+    --fg-color: black
+    --padding: 6px
+
+theme dark => .dark 
+    --bg-color: gray 
+    --fg-color: yellow
+
+// declare inline blocks
+$font-stack => font-family: Helvetica, Arial, sans-serif
+$rounded => border-radius: 8px
+
+// or declare blocks
+$theme-colors =>
+    background-color: --bg-color
+    color: --fg-color
+
+// ----------------------------
+// use
+.body
+    $font-stack
+    $theme-colors
+    padding: 12px
+
+    tablet =>
+        padding: 6px 
+  
+    mobile =>
+        padding: 0        
+
+.card
+    $theme-colors
+    $rounded
+

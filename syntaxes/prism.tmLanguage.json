@@ -101,6 +101,10 @@
         {
           "name": "keyword.control.prism",
           "match": "(?<=\\s+)\\b(config|media|theme)\\b"
+        },
+        {
+          "name": "keyword.control.css-block.prism",
+          "match": "^```(?:css|)$"
         }
       ]
     }
