@@ -5,22 +5,25 @@
       "include": "#comments"
     },
     {
-      "include": "#configs"
+      "include": "#configs-keys"
     },
     {
-      "include": "#allowed-configs"
+      "include": "#configs-values-allowed"
     },
     {
       "include": "#keywords"
     },
     {
-      "include": "#theme_and_media_names"
+      "include": "#theme_and_media_keys"
     },
     {
       "include": "#theme-variable"
     },
     {
-      "include": "#variables-and-operators"
+      "include": "#variables"
+    },
+    {
+      "include": "#operators"
     }
   ],
   "repository": {
@@ -37,15 +40,15 @@
         }
       ]
     },
-    "configs": {
+    "configs-keys": {
       "patterns": [
         {
-          "name": "constant.language.configs.prism",
+          "name": "constant.language.key.prism",
           "match": "(?<=\\bconfig\\s+)([\\w-]+)(?=\\s*=>)"
         }
       ]
     },
-    "allowed-configs": {
+    "configs-values-allowed": {
       "patterns": [
         {
           "name": "constant.language.allowed-minify.prism",
@@ -61,19 +64,11 @@
         }
       ]
     },
-    "keywords": {
-      "patterns": [
-        {
-          "name": "keyword.control.prism",
-          "match": "(?<!@)^\\s*(media|config|theme)\\b"
-        }
-      ]
-    },
-    "theme_and_media_names": {
+    "theme_and_media_keys": {
       "patterns": [
         {
           "name": "string.unquoted.prism",
-          "match": "(?<=^|\\s)(?!config\\b)([\\w-]+)(?=\\s*=>)"
+          "match": "([\\w-]+)(?=\\s*=>)"
         }
       ]
     },
@@ -85,15 +80,27 @@
         }
       ]
     },
-    "variables-and-operators": {
+    "variables": {
       "patterns": [
         {
           "name": "variable.other.prism",
           "match": "\\$[a-zA-Z0-9_-]+"
-        },
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
         {
           "name": "keyword.control.conditional.prism",
           "match": "=>|&"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.prism",
+          "match": "(?<=\\s+)\\b(config|media|theme)\\b"
         }
       ]
     }
