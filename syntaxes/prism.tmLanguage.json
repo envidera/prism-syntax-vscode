@@ -52,15 +52,15 @@
       "patterns": [
         {
           "name": "constant.language.allowed-minify.prism",
-          "match": "(?<==>\\s*)(?i)(full|inline|none)"
+          "match": "(?<==>\\s*)(?i)\\b(full|inline|none)\\b"
         },
         {
           "name": "constant.language.allowed-switch.prism",
-          "match": "(?<==>\\s*)(?i)(on|off)"
+          "match": "(?<==>\\s*)(?i)\\b(on|off)\\b"
         },
         {
           "name": "constant.language.allowed-treat.prism",
-          "match": "(?<==>\\s*)(?i)(allow|alert|error)"
+          "match": "(?<==>\\s*)(?i)\\b(allow|alert|error)\\b"
         }
       ]
     },
@@ -100,7 +100,11 @@
       "patterns": [
         {
           "name": "keyword.control.prism",
-          "match": "(?<=\\s+)\\b(config|media|theme)\\b"
+          "match": "^\\s*\\b(config|media|theme|include)\\b"
+        },
+        {
+          "name": "keyword.control.css-block.prism",
+          "match": "^```(?:css|)$"
         }
       ]
     }

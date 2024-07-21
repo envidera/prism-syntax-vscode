@@ -1,0 +1,140 @@
+// ----------------------------
+// Prism syntax  v0.1.x   
+// ----------------------------
+
+
+// inlinde Comment
+
+/* block commeent */
+
+/* 
+    block commeent 
+*/
+
+// ----------------------------
+// CSS block
+```css
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+```
+
+// ----------------------------
+// include files
+
+include btn.prism
+include navbar.prism
+include card.prism
+
+// include from subpath
+include src/v1/btn.prism
+include src/v1/card.prism
+include src/dev/rollup.prism
+
+// ----------------------------
+// config
+config key => value
+
+// minify
+config key => none
+config key => None
+config key => NONE
+
+config key => inline
+config key => Inline
+config key => INLINE
+
+config key => full
+config key => Full
+config key => FULL
+
+config key => nonenonono
+config key => inlinenonono
+config key => fullnonono
+
+//treat
+config key => error
+config key => Error
+config key => ERROR
+
+config key => allow
+config key => Allow
+config key => ALLOW
+
+config key => alert
+config key => Alert
+config key => ALERT
+
+config key => errornonono
+config key => allownonono
+config key => alertnonono
+
+// switch
+config key => on
+config key => On
+config key => ON
+
+config key => off
+config key => Off
+config key => OFF
+
+config key => onnonono
+config key => offnonono
+
+// ----------------------------
+// inline block
+$color => color: green
+$color-t_t => color: green
+
+// ----------------------------
+// block
+$color =>
+$color-t_t =>
+//block propo value
+    color: green    
+    color: --red
+
+// ----------------------------
+// block use
+.nav
+    $rounded        //block
+    $rounded-t_t
+
+    mobile =>
+        $rounded    // block media
+        !$rounded   // block none
+        ! $rounded  // block none
+
+    &-menu
+        $rounded   // block parent
+
+// ----------------------------
+// theme
+theme dark => .dark
+theme dark-t_t => .dark
+    // theme variable
+    --variable => value
+    --variable-t_t => value
+
+// ----------------------------
+// media
+media mobile => @media ...
+media mobile_t-t => @media ...
+
+// ----------------------------
+// media use
+.nav
+    mobile =>
+    mobile_t-t =>
+        property: value         // media prop value
+        property: --variable
+
+
+// ----------------------------
+// Parent
+.nav
+    &__title
+    &--title
+    &--title--small
+    &:hover
