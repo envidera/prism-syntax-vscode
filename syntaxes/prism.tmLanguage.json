@@ -59,7 +59,12 @@
           "name": "keyword.control.prism"
         }
       },
-      "patterns": []
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.css",
+          "match": "//.*"
+        }
+      ]
     },
     {
       "begin": "/html",
