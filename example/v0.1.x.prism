@@ -13,13 +13,12 @@
 
 // ----------------------------
 // CSS block
-```css
+/css
 @keyframes mymove {
   from {top: 0px;}
   to {top: 200px;}
 }
-```
-
+*/
 // ----------------------------
 // include files
 

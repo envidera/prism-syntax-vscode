@@ -24,6 +24,62 @@
     },
     {
       "include": "#operators"
+    },
+    {
+      "begin": "/js",
+      "end": "\\*/",
+      "name": "language.javascript",
+      "beginCaptures": {
+        "0": {
+          "name": "keyword.control.prism"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "keyword.control.prism"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.js"
+        }
+      ]
+    },
+    {
+      "begin": "/css",
+      "end": "\\*/",
+      "name": "language.css",
+      "beginCaptures": {
+        "0": {
+          "name": "keyword.control.prism"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "keyword.control.prism"
+        }
+      },
+      "patterns": []
+    },
+    {
+      "begin": "/html",
+      "end": "\\*/",
+      "name": "language.html",
+      "beginCaptures": {
+        "0": {
+          "name": "keyword.control.prism"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "keyword.control.prism"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.js"
+        }
+      ]
     }
   ],
   "repository": {
@@ -101,10 +157,6 @@
         {
           "name": "keyword.control.prism",
           "match": "^\\s*\\b(config|media|theme|include)\\b"
-        },
-        {
-          "name": "keyword.control.css-block.prism",
-          "match": "^```(?:css|)$"
         }
       ]
     }
