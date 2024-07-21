@@ -5,3 +5,7 @@ node_modules
 .gitignore
 .tmp
 themes _disabled
+makefile
+design
+dist
+example
