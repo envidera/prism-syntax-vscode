@@ -11,7 +11,7 @@ all: build
 # --baseContentUrl [url]  Prepend all relative links in README.md with this url.
 # --baseImagesUrl [url]   Prepend all relative image links in README.md with this url.
 
-BASE_IMAGE_URL="https://raw.githubusercontent.com/envidera/prism-syntax-vscode/main"
+BASE_IMAGE_URL="https://raw.githubusercontent.com/envidera/prism-syntax-vscode/main/src"
                 
 # Build output dir
 DIST_DIR := $(CURDIR)/dist
@@ -32,4 +32,4 @@ install:
 
 # publish to marketplace
 publish:
-	@ cd $(DIST_DIR) && vsce publish --pre-release --baseImagesUrl ${BASE_IMAGE_URL}
+	@ cd $(SRC_DIR) && vsce publish --pre-release --baseImagesUrl ${BASE_IMAGE_URL}
