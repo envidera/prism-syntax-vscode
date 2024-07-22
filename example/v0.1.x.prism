@@ -137,6 +137,8 @@ media mobile_t-t => @media ...
 // ----------------------------
 // media use
 .nav
+.nav__menu--small
+.nav__logo
     mobile =>
     mobile_t-t =>
         property: value         // media prop value

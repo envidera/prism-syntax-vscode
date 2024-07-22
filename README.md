@@ -1,10 +1,8 @@
+# Envidera Prism Syntax 
+
 Prism syntax highlighting for VSCode
 
-> This is currently a preview extension and might contain highlighting bugs. If you encounter any issues, please report them on [GitHub](https://github.com/envidera/prism-syntax-vscode/issues).
-
-File extension: `.prism` only
-
-![screenshot](/img/screenshot-2024-07-18.min.png)
+For more information, please read the extension [README](src/README.md)
 
 ## Installation
 

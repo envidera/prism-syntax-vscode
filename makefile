@@ -15,6 +15,7 @@ BASE_IMAGE_URL="https://raw.githubusercontent.com/envidera/prism-syntax-vscode/m
                 
 # Build output dir
 DIST_DIR := $(CURDIR)/dist
+SRC_DIR := $(CURDIR)/src
 
 # Latest .vsix file in dist directory
 VSIX_FILE := $(shell ls $(DIST_DIR)/*.vsix | sort -V | tail -n 1)
@@ -24,11 +25,11 @@ VSIX_FILE := $(shell ls $(DIST_DIR)/*.vsix | sort -V | tail -n 1)
 # https://code.visualstudio.com/api/working-with-extensions/publishing-extension#prerelease-extensions
 
 build:
-	@ vsce package --pre-release --baseImagesUrl $(BASE_IMAGE_URL)  --out $(DIST_DIR)
+	@ cd $(SRC_DIR) && vsce package --pre-release --baseImagesUrl $(BASE_IMAGE_URL)  --out $(DIST_DIR)
 
 install:
 	@ cd $(DIST_DIR) && code --install-extension $(VSIX_FILE)
 
 # publish to marketplace
 publish:
-	@ vsce publish --pre-release --baseImagesUrl ${BASE_IMAGE_URL}
+	@ cd $(DIST_DIR) && vsce publish --pre-release --baseImagesUrl ${BASE_IMAGE_URL}
