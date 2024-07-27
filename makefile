@@ -1,7 +1,5 @@
 all: build
 
-
-
 # -------------------------------------------------------------------
 # IMPORTANT:
 # Building locally must be done through the `make` command.

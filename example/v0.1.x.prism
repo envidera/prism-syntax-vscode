@@ -3,12 +3,12 @@
 // ----------------------------
 
 
-// inlinde Comment
+// inline Comment
 
-/* block commeent */
+/* block comment */
 
 /* 
-    block commeent 
+    block comment 
 */
 
 // ----------------------------
@@ -104,7 +104,7 @@ $color-t_t => color: green
 // block
 $color =>
 $color-t_t =>
-//block propo value
+//block prop value
     color: green    
     color: --red
 
