@@ -32,6 +32,7 @@
 */
 
 
+
 // ----------------------------
 // include files
 
@@ -152,3 +153,16 @@ media mobile_t-t => @media ...
     &--title
     &--title--small
     &:hover
+
+
+//-----------------------------
+// highlight invalid characters
+// prism.invalidCharacterColor
+card {
+    border: 1px solid #ddd ;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    font-family: Arial, sans-serif;
+}

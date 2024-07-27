@@ -1,169 +1,188 @@
 {
-  "scopeName": "source.prism",
-  "patterns": [
-    {
-      "include": "#comments"
-    },
-    {
-      "include": "#configs-keys"
-    },
-    {
-      "include": "#configs-values-allowed"
-    },
-    {
-      "include": "#keywords"
-    },
-    {
-      "include": "#theme_and_media_keys"
-    },
-    {
-      "include": "#theme-variable"
-    },
-    {
-      "include": "#variables"
-    },
-    {
-      "include": "#operators"
-    },
-    {
-      "begin": "/js",
-      "end": "\\*/",
-      "name": "language.javascript",
-      "beginCaptures": {
-        "0": {
-          "name": "keyword.control.prism"
-        }
-      },
-      "endCaptures": {
-        "0": {
-          "name": "keyword.control.prism"
-        }
-      },
-      "patterns": [
+    "": "comments are not used by the extension",
+    "-": "-------------------------------------------------",
+    "scopeName": "source.prism",
+    "patterns": [
         {
-          "include": "source.js"
-        }
-      ]
-    },
-    {
-      "begin": "/css",
-      "end": "\\*/",
-      "name": "language.css",
-      "beginCaptures": {
-        "0": {
-          "name": "keyword.control.prism"
-        }
-      },
-      "endCaptures": {
-        "0": {
-          "name": "keyword.control.prism"
-        }
-      },
-      "patterns": [
+            "include": "#comments"
+        },
         {
-          "name": "comment.line.double-slash.css",
-          "match": "//.*"
-        }
-      ]
-    },
-    {
-      "begin": "/html",
-      "end": "\\*/",
-      "name": "language.html",
-      "beginCaptures": {
-        "0": {
-          "name": "keyword.control.prism"
-        }
-      },
-      "endCaptures": {
-        "0": {
-          "name": "keyword.control.prism"
-        }
-      },
-      "patterns": [
+            "include": "#configs-keys"
+        },
         {
-          "include": "source.js"
+            "include": "#configs-values-allowed"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#theme-and-media-keys"
+        },
+        {
+            "include": "#theme-variable"
+        },
+        {
+            "include": "#variables"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "": "invalid-character scope is highlighted by extension.js in out path",
+            "-": "-------------------------------------------------",
+            "include": "#invalid-character"
+        },
+        {
+            "begin": "/css",
+            "end": "\\*/",
+            "name": "language.css",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.prism"
+                }
+            },
+            "endCaptures": {
+                "0": {
+                    "name": "keyword.control.prism"
+                }
+            },
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.css",
+                    "match": "//.*"
+                }
+            ]
+        },
+        {
+            "": "html block is not yet implemented by prism",
+            "-": "-------------------------------------------------",
+            "begin": "/html",
+            "end": "\\*/",
+            "name": "language.html",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.prism"
+                }
+            },
+            "endCaptures": {
+                "0": {
+                    "name": "keyword.control.prism"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.js"
+                }
+            ]
+        },
+        {
+            "": "js block is not yet implemented by prism",
+            "-": "-------------------------------------------------",
+            "begin": "/js",
+            "end": "\\*/",
+            "name": "language.javascript",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.prism"
+                }
+            },
+            "endCaptures": {
+                "0": {
+                    "name": "keyword.control.prism"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.js"
+                }
+            ]
         }
-      ]
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.inline.prism",
+                    "match": "//.*$"
+                },
+                {
+                    "name": "comment.block.prism",
+                    "begin": "/\\*",
+                    "end": "\\*/"
+                }
+            ]
+        },
+        "configs-keys": {
+            "patterns": [
+                {
+                    "name": "constant.language.key.prism",
+                    "match": "(?<=\\bconfig\\s+)([\\w-]+)(?=\\s*=>)"
+                }
+            ]
+        },
+        "configs-values-allowed": {
+            "patterns": [
+                {
+                    "name": "constant.language.allowed-minify.prism",
+                    "match": "(?<==>\\s*)(?i)\\b(full|inline|none)\\b"
+                },
+                {
+                    "name": "constant.language.allowed-switch.prism",
+                    "match": "(?<==>\\s*)(?i)\\b(on|off)\\b"
+                },
+                {
+                    "name": "constant.language.allowed-treat.prism",
+                    "match": "(?<==>\\s*)(?i)\\b(allow|alert|error)\\b"
+                }
+            ]
+        },
+        "theme-and-media-keys": {
+            "patterns": [
+                {
+                    "name": "string.unquoted.prism",
+                    "match": "([\\w-]+)(?=\\s*=>)"
+                }
+            ]
+        },
+        "theme-variable": {
+            "patterns": [
+                {
+                    "name": "string.unquoted.prism",
+                    "match": "(?<![\\w&-])(--[a-zA-Z0-9_-]+)(?![\\w-])"
+                }
+            ]
+        },
+        "variables": {
+            "patterns": [
+                {
+                    "name": "variable.other.prism",
+                    "match": "\\$[a-zA-Z0-9_-]+"
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.control.conditional.prism",
+                    "match": "=>|&"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.control.prism",
+                    "match": "^\\s*\\b(config|media|theme|include)\\b"
+                }
+            ]
+        },
+        "invalid-character": {
+            "patterns": [
+                {
+                    "name": "invalid.character.prism",
+                    "match": "\\{|\\}|;"
+                }
+            ]
+        }
     }
-  ],
-  "repository": {
-    "comments": {
-      "patterns": [
-        {
-          "name": "comment.line.inline.prism",
-          "match": "//.*$"
-        },
-        {
-          "name": "comment.block.prism",
-          "begin": "/\\*",
-          "end": "\\*/"
-        }
-      ]
-    },
-    "configs-keys": {
-      "patterns": [
-        {
-          "name": "constant.language.key.prism",
-          "match": "(?<=\\bconfig\\s+)([\\w-]+)(?=\\s*=>)"
-        }
-      ]
-    },
-    "configs-values-allowed": {
-      "patterns": [
-        {
-          "name": "constant.language.allowed-minify.prism",
-          "match": "(?<==>\\s*)(?i)\\b(full|inline|none)\\b"
-        },
-        {
-          "name": "constant.language.allowed-switch.prism",
-          "match": "(?<==>\\s*)(?i)\\b(on|off)\\b"
-        },
-        {
-          "name": "constant.language.allowed-treat.prism",
-          "match": "(?<==>\\s*)(?i)\\b(allow|alert|error)\\b"
-        }
-      ]
-    },
-    "theme_and_media_keys": {
-      "patterns": [
-        {
-          "name": "string.unquoted.prism",
-          "match": "([\\w-]+)(?=\\s*=>)"
-        }
-      ]
-    },
-    "theme-variable": {
-      "patterns": [
-        {
-          "name": "string.unquoted.prism",
-          "match": "(?<![\\w&-])(--[a-zA-Z0-9_-]+)(?![\\w-])"
-        }
-      ]
-    },
-    "variables": {
-      "patterns": [
-        {
-          "name": "variable.other.prism",
-          "match": "\\$[a-zA-Z0-9_-]+"
-        }
-      ]
-    },
-    "operators": {
-      "patterns": [
-        {
-          "name": "keyword.control.conditional.prism",
-          "match": "=>|&"
-        }
-      ]
-    },
-    "keywords": {
-      "patterns": [
-        {
-          "name": "keyword.control.prism",
-          "match": "^\\s*\\b(config|media|theme|include)\\b"
-        }
-      ]
-    }
-  }
 }
