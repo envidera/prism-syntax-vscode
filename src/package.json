@@ -5,7 +5,7 @@
     "version": "0.1.6",
     "license": "MIT",
     "publisher": "envidera",
-    "icon": "./img/prixm_icon-128x128px.png",
+    "icon": "./img/prixm-icon-128x128px.png",
     "author": {
         "name": "Andrio Stark",
         "email": "anstk@envidera.com"

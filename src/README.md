@@ -6,7 +6,7 @@ File extension: `.prxc` (Prixm Component)
 
 Screenshot of the [One Dark Pro Mix](https://marketplace.visualstudio.com/items/zhuangtongfa.material-theme) theme with Prixm syntax highlighting.
 
-![screenshot](img/screenshot-2024-07-18.min.png)
+![screenshot](img/screenshot-2024-07-28.min.png)
 
 
 
