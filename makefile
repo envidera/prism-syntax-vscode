@@ -23,7 +23,6 @@ VSIX_FILE := $(shell ls $(DIST_DIR)/*.vsix | sort -V | tail -n 1)
 # https://code.visualstudio.com/api/working-with-extensions/publishing-extension#prerelease-extensions
 
 build:
-	@ cd $(SRC_DIR) && npm run build
 	@ cd $(SRC_DIR) && vsce package --pre-release --baseImagesUrl $(BASE_IMAGE_URL)  --out $(DIST_DIR)
 
 install:

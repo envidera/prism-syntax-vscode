@@ -76,7 +76,6 @@
     },
     "main": "./out/extension.js",
     "scripts": {
-        "start": "node ./out/extension.js",
-        "build": "tsc --project ./"
+        "start": "node ./out/extension.js"
     }
 }
