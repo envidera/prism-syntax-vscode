@@ -2,7 +2,7 @@
     "name": "prixm-syntax",
     "displayName": "Envidera Prixm Syntax",
     "description": "Prixm syntax highlighting for VSCode.",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "license": "MIT",
     "publisher": "envidera",
     "icon": "./img/prixm-icon-128x128px.png",
