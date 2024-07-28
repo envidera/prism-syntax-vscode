@@ -1,5 +1,11 @@
-
 # Exclude node_modules
 node_modules
-src
-tsconfig.json
+# Exclude any other unnecessary files or directories
+.vscode
+.gitignore
+.tmp
+themes _disabled
+makefile
+design
+dist
+example
