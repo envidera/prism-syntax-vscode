@@ -1,4 +1,5 @@
-/target
+
+# root project folders
 .tmp
 .vscode/tasks.json
 .vscode/settings.json
