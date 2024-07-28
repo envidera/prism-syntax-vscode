@@ -1,5 +1,5 @@
 // ----------------------------
-// Prism syntax  v0.1.x   
+// Prixm syntax  v0.1.x   
 // ----------------------------
 
 
@@ -36,14 +36,14 @@
 // ----------------------------
 // include files
 
-include btn.prism
-include navbar.prism
-include card.prism
+include btn.prxc
+include navbar.prxc
+include card.prxc
 
 // include from subpath
-include src/v1/btn.prism
-include src/v1/card.prism
-include src/dev/rollup.prism
+include src/v1/btn.prxc
+include src/v1/card.prxc
+include src/dev/rollup.prxc
 
 // ----------------------------
 // config
@@ -157,7 +157,7 @@ media mobile_t-t => @media ...
 
 //-----------------------------
 // highlight invalid characters
-// prism.invalidCharacterColor
+// prixm.invalidCharacterColor
 card {
     border: 1px solid #ddd ;
     border-radius: 8px;

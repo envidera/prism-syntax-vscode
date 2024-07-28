@@ -1,11 +1,11 @@
 {
-    "name": "prism-syntax",
-    "displayName": "Envidera Prism Syntax",
-    "description": "Prism syntax highlighting for VSCode.",
+    "name": "prixm-syntax",
+    "displayName": "Envidera Prixm Syntax",
+    "description": "Prixm syntax highlighting for VSCode.",
     "version": "0.1.6",
     "license": "MIT",
     "publisher": "envidera",
-    "icon": "./img/prism-icon-128x128px.png",
+    "icon": "./img/prixm_icon-128x128px.png",
     "author": {
         "name": "Andrio Stark",
         "email": "anstk@envidera.com"
@@ -13,60 +13,60 @@
     "engines": {
         "vscode": "^1.91.0"
     },
-    "homepage": "https://github.com/envidera/prism-syntax-vscode",
+    "homepage": "https://github.com/envidera/prixm-syntax-vscode",
     "repository": {
         "type": "git",
-        "url": "https://github.com/envidera/prism-syntax-vscode.git"
+        "url": "https://github.com/envidera/prixm-syntax-vscode.git"
     },
     "categories": [
         "Other"
     ],
     "keywords": [
         "envidera",
-        "prism",
+        "prixm",
         "syntax"
     ],
     "contributes": {
         "languages": [
             {
-                "id": "prism",
+                "id": "prixm",
                 "aliases": [
-                    "Prism",
-                    "prism"
+                    "Prixm",
+                    "prixm"
                 ],
                 "extensions": [
-                    ".prism"
+                    ".prxc"
                 ],
                 "configuration": "./language-configuration.json"
             },
             {
-                "id": "prism-markdown"
+                "id": "prixm-markdown"
             }
         ],
         "grammars": [
             {
-                "language": "prism",
-                "scopeName": "source.prism",
-                "path": "./syntaxes/prism.tmLanguage.json"
+                "language": "prixm",
+                "scopeName": "source.prixm",
+                "path": "./syntaxes/prixm.tmLanguage.json"
             },
             {
-                "language": "prism-markdown",
-                "scopeName": "markdown.prism.codeblock",
-                "path": "./syntaxes/prism-markdown.json",
+                "language": "prixm-markdown",
+                "scopeName": "markdown.prixm.codeblock",
+                "path": "./syntaxes/prixm-markdown.json",
                 "injectTo": [
                     "text.html.markdown"
                 ],
                 "embeddedLanguages": {
-                    "meta.embedded.block.prism": "prism"
+                    "meta.embedded.block.prixm": "prixm"
                 }
             }
         ],
         "": "UI Settings for invalidCharacterColor",
         "-": "-------------------------------------------------",
         "configuration": {
-            "title": "Prism",
+            "title": "Prixm",
             "properties": {
-                "prism.invalidCharacterColor": {
+                "prixm.invalidCharacterColor": {
                     "type": "string",
                     "default": "#ff0000",
                     "markdownDescription": "Highlight invalid characters `{`, `}`, and `;` with a color."

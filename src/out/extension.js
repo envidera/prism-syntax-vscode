@@ -4,8 +4,8 @@ const vscode = require('vscode');
     This js replaces the manual addition of token 
     configuration in 'settings.json'
 
-    It uses the custom "invalid.character.prism" scope
-    in prism.tmLanguage.json > invalid-character
+    It uses the custom "invalid.character.prixm" scope
+    in prixm.tmLanguage.json > invalid-character
     ----------------------------------------------------
 
     before:
@@ -13,7 +13,7 @@ const vscode = require('vscode');
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
-                "scope": "invalid.character.prism",
+                "scope": "invalid.character.prixm",
                 "settings": {
                     "foreground": "#ff0000",
                     "fontStyle": "bold underline"
@@ -24,20 +24,20 @@ const vscode = require('vscode');
 
     after:
 
-    "prism.invalidCharacterColor": "#ff0000",
+    "prixm.invalidCharacterColor": "#ff0000",
 */
 
 function activate(context) {
     //Function to update token color rules
     function updateTokenColorCustomization() {
-        const config = vscode.workspace.getConfiguration('prism');
+        const config = vscode.workspace.getConfiguration('prixm');
         const invalidCharColor = config.get('invalidCharacterColor') || '#ff0000';
 
         //Update token color rules
         const tokenColorCustomizations = {
             "textMateRules": [
                 {
-                    "scope": "invalid.character.prism",
+                    "scope": "invalid.character.prixm",
                     "settings": {
                         "foreground": invalidCharColor,
                         "fontStyle": "bold"
@@ -52,7 +52,7 @@ function activate(context) {
 
     //Update the color whenever the configuration changes
     vscode.workspace.onDidChangeConfiguration(event => {
-        if (event.affectsConfiguration('prism.invalidCharacterColor')) {
+        if (event.affectsConfiguration('prixm.invalidCharacterColor')) {
             updateTokenColorCustomization();
         }
     });

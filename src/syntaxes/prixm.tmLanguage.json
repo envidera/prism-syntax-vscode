@@ -1,7 +1,7 @@
 {
     "": "comments are not used by the extension",
     "-": "-------------------------------------------------",
-    "scopeName": "source.prism",
+    "scopeName": "source.prixm",
     "patterns": [
         {
             "include": "#comments"
@@ -38,12 +38,12 @@
             "name": "language.css",
             "beginCaptures": {
                 "0": {
-                    "name": "keyword.control.prism"
+                    "name": "keyword.control.prixm"
                 }
             },
             "endCaptures": {
                 "0": {
-                    "name": "keyword.control.prism"
+                    "name": "keyword.control.prixm"
                 }
             },
             "patterns": [
@@ -54,19 +54,19 @@
             ]
         },
         {
-            "": "html block is not yet implemented by prism",
+            "": "html block is not yet implemented by prixm",
             "-": "-------------------------------------------------",
             "begin": "/html",
             "end": "\\*/",
             "name": "language.html",
             "beginCaptures": {
                 "0": {
-                    "name": "keyword.control.prism"
+                    "name": "keyword.control.prixm"
                 }
             },
             "endCaptures": {
                 "0": {
-                    "name": "keyword.control.prism"
+                    "name": "keyword.control.prixm"
                 }
             },
             "patterns": [
@@ -76,19 +76,19 @@
             ]
         },
         {
-            "": "js block is not yet implemented by prism",
+            "": "js block is not yet implemented by prixm",
             "-": "-------------------------------------------------",
             "begin": "/js",
             "end": "\\*/",
             "name": "language.javascript",
             "beginCaptures": {
                 "0": {
-                    "name": "keyword.control.prism"
+                    "name": "keyword.control.prixm"
                 }
             },
             "endCaptures": {
                 "0": {
-                    "name": "keyword.control.prism"
+                    "name": "keyword.control.prixm"
                 }
             },
             "patterns": [
@@ -102,11 +102,11 @@
         "comments": {
             "patterns": [
                 {
-                    "name": "comment.line.inline.prism",
+                    "name": "comment.line.inline.prixm",
                     "match": "//.*$"
                 },
                 {
-                    "name": "comment.block.prism",
+                    "name": "comment.block.prixm",
                     "begin": "/\\*",
                     "end": "\\*/"
                 }
@@ -115,7 +115,7 @@
         "configs-keys": {
             "patterns": [
                 {
-                    "name": "constant.language.key.prism",
+                    "name": "constant.language.key.prixm",
                     "match": "(?<=\\bconfig\\s+)([\\w-]+)(?=\\s*=>)"
                 }
             ]
@@ -123,15 +123,15 @@
         "configs-values-allowed": {
             "patterns": [
                 {
-                    "name": "constant.language.allowed-minify.prism",
+                    "name": "constant.language.allowed-minify.prixm",
                     "match": "(?<==>\\s*)(?i)\\b(full|inline|none)\\b"
                 },
                 {
-                    "name": "constant.language.allowed-switch.prism",
+                    "name": "constant.language.allowed-switch.prixm",
                     "match": "(?<==>\\s*)(?i)\\b(on|off)\\b"
                 },
                 {
-                    "name": "constant.language.allowed-treat.prism",
+                    "name": "constant.language.allowed-treat.prixm",
                     "match": "(?<==>\\s*)(?i)\\b(allow|alert|error)\\b"
                 }
             ]
@@ -139,7 +139,7 @@
         "theme-and-media-keys": {
             "patterns": [
                 {
-                    "name": "string.unquoted.prism",
+                    "name": "string.unquoted.prixm",
                     "match": "([\\w-]+)(?=\\s*=>)"
                 }
             ]
@@ -147,7 +147,7 @@
         "theme-variable": {
             "patterns": [
                 {
-                    "name": "string.unquoted.prism",
+                    "name": "string.unquoted.prixm",
                     "match": "(?<![\\w&-])(--[a-zA-Z0-9_-]+)(?![\\w-])"
                 }
             ]
@@ -155,7 +155,7 @@
         "variables": {
             "patterns": [
                 {
-                    "name": "variable.other.prism",
+                    "name": "variable.other.prixm",
                     "match": "\\$[a-zA-Z0-9_-]+"
                 }
             ]
@@ -163,7 +163,7 @@
         "operators": {
             "patterns": [
                 {
-                    "name": "keyword.control.conditional.prism",
+                    "name": "keyword.control.conditional.prixm",
                     "match": "=>|&"
                 }
             ]
@@ -171,7 +171,7 @@
         "keywords": {
             "patterns": [
                 {
-                    "name": "keyword.control.prism",
+                    "name": "keyword.control.prixm",
                     "match": "^\\s*\\b(config|media|theme|include)\\b"
                 }
             ]
@@ -179,7 +179,7 @@
         "invalid-character": {
             "patterns": [
                 {
-                    "name": "invalid.character.prism",
+                    "name": "invalid.character.prixm",
                     "match": "\\{|\\}|;"
                 }
             ]

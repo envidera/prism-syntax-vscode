@@ -1,5 +1,5 @@
 // ----------------------------
-// Prism syntax        
+// Prixm syntax        
 // ----------------------------
 
 // declare configs
@@ -14,7 +14,7 @@ config minify-theme                     => none
 config minify-vanilla-css               => none
 
 // declare medias
-media mobile             => @media  max-width: 480px)
+media mobile             => @media (max-width: 480px)
 media tablet             => @media (min-width: 481px) and (max-width: 960px)
 media large-white_fridge => @media (min-width: 1901px) and (max-width: 5000px)
 
